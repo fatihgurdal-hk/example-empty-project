@@ -22,7 +22,7 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t ghcr.io/${{ github.repository }}/example:latest -t ghcr.io/${{ github.repository }}/example:${{ github.sha }} ./Example
+          docker build -t ghcr.io/${{ github.repository }}/example:latest -t ghcr.io/${{ github.repository }}/example:${{ github.sha }} ./Example/ExampleApi
 
       - name: Push Docker image (latest)
         run: |
